@@ -18,7 +18,5 @@ class My_ET_Tweak {
 	
 }
 
-new My_ET_Tweak();
-
 ?>
 		
