@@ -27,6 +27,8 @@ function my_et_enqueue_styles() {
 function my_et_maybe_include_tweaks() {
 	$pattern = dirname( __FILE__ ) . '/tweaks/tw-*.php';
 	$tweaks = (array) glob( $pattern );
+	
+	include_once( './tweaks/class-et-tweak.php' );
 
 	foreach ( $tweaks as $tweak ) {
 		include_once( $tweak );
